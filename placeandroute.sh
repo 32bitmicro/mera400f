@@ -6,5 +6,5 @@ PROJECT=mera400f
 #- Eight user-accessible LEDs
 #- 12 MHz oscillator
 
-nextpnr-ice40 --freq 20 --hx8k --package ct256 --json $PROJECT.json --pcf-allow-unconstrained --pcf $PROJECT.pcf --asc $PROJECT.asc
+nextpnr-ice40 --freq 12 --hx8k --package ct256 --json $PROJECT.json --pcf-allow-unconstrained --pcf $PROJECT.pcf --asc $PROJECT.asc
 icepack -s $PROJECT.asc $PROJECT.bin
