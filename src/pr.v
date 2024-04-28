@@ -59,8 +59,8 @@ module pr(
 	output [0:15] bus_ki	// B71, B77, B59, B67, A59, A65, A69, A55, B82, A79, A73, B73, A76, A88, A72, B58
 );
 
-	parameter CPU_NUMBER;
-	parameter AWP_PRESENT;
+	parameter CPU_NUMBER = $unit::CPU_NUMBER;
+	parameter AWP_PRESENT = $unit::AWP_PRESENT;
 
 	wire strob_a = ~as2 & strob1;
 	wire strob_b =  as2 & strob2;

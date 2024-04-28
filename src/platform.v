@@ -1,3 +1,5 @@
+`include "parameters.v"
+
 module platform(
 	input CLK_EXT,
 	output BUZZER_,

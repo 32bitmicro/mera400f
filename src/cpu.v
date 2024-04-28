@@ -54,7 +54,7 @@ module cpu(
 
 	// --- CPU FEATURES-----------------------------------------------------
 
-	parameter CPU_NUMBER;
+	parameter CPU_NUMBER = $unit::CPU_NUMBER;
 	parameter AWP_PRESENT = 1'b1;
 	parameter INOU_USER_ILLEGAL = 1'b1;
 	parameter STOP_ON_NOMEM = 1'b1;

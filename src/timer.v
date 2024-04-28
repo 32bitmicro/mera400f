@@ -6,8 +6,8 @@ module timer(
 	output zegar
 );
 
-	parameter TIMER_CYCLE_MS;
-	parameter CLK_SYS_HZ;
+	parameter TIMER_CYCLE_MS = $unit::TIMER_CYCLE_MS;
+	parameter CLK_SYS_HZ = $unit::CLK_SYS_HZ;
 
 	// a: 6-1 : 2 ms = 500 Hz = 100_000 cycles @ 50MHz
 	// a: 6-2 : 4 ms = 250 Hz = 200_000 cycles @ 50MHz

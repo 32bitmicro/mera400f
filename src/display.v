@@ -9,8 +9,8 @@ module display(
 	output [7:0] dig
 );
 
-	wire [6:0] digs [7:0];
-
+	wire [7:0] digs [7:0];
+	
 	hex2seg d0(.hex(w[12:15]), .seg(digs[0]));
 	hex2seg d1(.hex(w[8:11]), .seg(digs[1]));
 	hex2seg d2(.hex(w[4:7]), .seg(digs[2]));
@@ -22,12 +22,13 @@ module display(
 	assign digs[7][0] = indicators[5];
 	assign digs[7][6] = indicators[4];
 	assign digs[7][5:1] = 0;
+	assign digs[7][7] = 0;
 
 	sevenseg_drv DRV(
 		.clk(clk_sys),
 		.seg(seg),
 		.dig(dig),
-		.digs(digs),
+//		.digs(digs),	// FIXME: this is not supported by yosys
 		.dots({indicators[2:0], indicators[3], indicators[9:6]})
 	);
 

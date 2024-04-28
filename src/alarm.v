@@ -6,8 +6,8 @@ module alarm(
 	output talarm
 );
 
-	parameter ALARM_DLY_TICKS;
-	parameter ALARM_TICKS;
+	parameter ALARM_DLY_TICKS = $unit::ALARM_DLY_TICKS;
+	parameter ALARM_TICKS = $unit::ALARM_TICKS;
 
 	localparam width = $clog2(ALARM_DLY_TICKS+1);
 

@@ -13,7 +13,7 @@ module mera400f(
 	output [0:9] indicators
 );
 
-	parameter CLK_EXT_HZ;
+	parameter CLK_EXT_HZ = $unit::CLK_EXT_HZ;
 
 // -----------------------------------------------------------------------
 // --- Clocks ------------------------------------------------------------

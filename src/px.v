@@ -154,12 +154,12 @@ module px(
 	output awaria		// CPU stopped due to a memory access or parity error indicator
 );
 
-	parameter AWP_PRESENT;
-	parameter STOP_ON_NOMEM;
-	parameter LOW_MEM_WRITE_DENY;
+	parameter AWP_PRESENT = $unit::AWP_PRESENT;
+	parameter STOP_ON_NOMEM = $unit::STOP_ON_NOMEM;
+	parameter LOW_MEM_WRITE_DENY = $unit::LOW_MEM_WRITE_DENY;
 
-	parameter ALARM_DLY_TICKS;
-	parameter ALARM_TICKS;
+	parameter ALARM_DLY_TICKS = $unit::ALARM_DLY_TICKS;
+	parameter ALARM_TICKS = $unit::ALARM_TICKS;
 
 	// CPU state registers
 

@@ -39,7 +39,7 @@
 // -----------------------------------------------------------------------
 module sevenseg_drv(
 	input clk,
-	input [6:0] digs [7:0],
+	input [6:0] digsm, // [7:0],
 	input [7:0] dots,
 	output reg [7:0] dig,
 	output reg [7:0] seg

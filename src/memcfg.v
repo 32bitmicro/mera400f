@@ -13,8 +13,8 @@ module memcfg(
 	output pvalid
 );
 
-	parameter MODULE_ADDR_WIDTH;
-	parameter FRAME_ADDR_WIDTH;
+	parameter MODULE_ADDR_WIDTH  = 16;
+	parameter FRAME_ADDR_WIDTH = 16;
 
 /*
 	Memory configuration: "OU r, n": OU=s_, r=rdt_, n=ad_

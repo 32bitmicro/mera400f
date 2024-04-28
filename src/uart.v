@@ -11,8 +11,8 @@ module uart(
 	input rxd
 );
 
-	parameter baud;
-	parameter clk_speed;
+	parameter baud = $unit::baud;
+	parameter clk_speed = $unit::clk_speed;
 
 	localparam prescale = clk_speed/baud;
 	localparam width = $clog2(prescale+1);
@@ -50,8 +50,8 @@ module uart_tx(
 	output txd
 );
 
-	parameter width;
-	parameter period;
+	parameter width = $unit::width;
+	parameter period = $unit::period;
 
 	localparam TX_IDLE	= 2'd0;
 	localparam TX_SEND	= 2'd1;
@@ -110,8 +110,8 @@ module uart_rx(
 	input rxd
 );
 
-	parameter width;
-	parameter period;
+	parameter width = $unit::width;
+	parameter period = $unit::period;
 	localparam halfperiod = period / 2;
 
 	localparam RX_IDLE	= 2'd0;

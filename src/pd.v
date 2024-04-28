@@ -125,7 +125,7 @@ module pd(
 	output lac				// B43
 );
 
-	parameter INOU_USER_ILLEGAL;
+	parameter INOU_USER_ILLEGAL = $unit::INOU_USER_ILLEGAL;
 
 	wor __NC; // unconnected signals here, to suppress warnings
 

@@ -17,8 +17,8 @@ module ifctl(
 	output talarm
 );
 
-	parameter ALARM_DLY_TICKS;
-	parameter ALARM_TICKS;
+	parameter ALARM_DLY_TICKS = $unit::ALARM_DLY_TICKS;
+	parameter ALARM_TICKS = $unit::ALARM_TICKS;
 
 	// Cała obsługa interfejsu potencjalnie też powinna być zrobiona jako automat.
 	// Być może powinna znaleźć się (po części?) w strobgen - oczekiwanie na interfejs między

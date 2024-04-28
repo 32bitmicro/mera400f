@@ -66,8 +66,8 @@ module pk(
 	input fn_trig
 );
 
-	parameter CLK_SYS_HZ;
-	parameter TIMER_CYCLE_MS;
+	parameter TIMER_CYCLE_MS = $unit::TIMER_CYCLE_MS;
+	parameter CLK_SYS_HZ = $unit::CLK_SYS_HZ;
 
 	// --- Input from IOBUS
 

@@ -1,0 +1,20 @@
+#iCE40HX-8K Breakout Board
+# iCE40HX-8K CT256 device
+#- Eight user-accessible LEDs
+#- 12 MHz oscillator
+
+set_io CLK_EXT J3
+
+# LEDs
+set_io LED1 B5
+set_io LED2 B4
+set_io LED3 A2
+set_io LED4 A1
+set_io LED5 C5
+set_io LED6 C4
+set_io LED7 B3
+set_io LED8 C3
+
+# UART/FTDI
+set_io UART_TX B12
+set_io UART_RX B10

@@ -65,8 +65,8 @@ module iobus(
 	output fn_trig
 );
 
-	parameter CLK_UART_HZ;
-	parameter UART_BAUD;
+	parameter CLK_UART_HZ = $unit::CLK_UART_HZ;
+	parameter UART_BAUD = $unit::UART_BAUD;
 
 	// --- UART --------------------------------------------------------------
 
